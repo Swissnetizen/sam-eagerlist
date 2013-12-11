@@ -17,17 +17,12 @@
   <h1>&ltsam-eagerlist&gt Demo</h1>
   <button>Press to populate list.</button>
   <sam-eagerlist id="list"></sam-eagerlist>
-  <template id="template">
-    <h1></h1>
-  </template>
 </body>
 	<script>
 	  addEventListener("DOMContentLoaded", function () {
 	    var list = document.getElementById("list");
-	    var template = document.getElementById("template");
 	    list.setupItem = function (index) {
-	      this.appendChild(template.content.cloneNode(true));
-	      xtag.query(this, "h1").innerHTML = index + 1;
+	      this.innerHTML = index;
 	    };
 	    list.count = 100;
 	  });
