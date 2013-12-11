@@ -27,7 +27,7 @@
 	    var template = document.getElementById("template");
 	    list.setupItem = function (index) {
 	      this.appendChild(template.cloneNode(true));
-	      this.querySelector("h1").innerHTML = index + 1;
+	      xtag.query(this, "h1").innerHTML = index + 1;
 	    };
 	    list.count = 100;
 	  });
