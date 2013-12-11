@@ -21,7 +21,7 @@
   </template>
 </body>
 	<script>
-	  window.onload = function () {
+	  addEventListener("DOMContentLoaded", function () {
 	    var list = document.getElementById("list");
 	    var template = document.getElementById("template");
 	    list.onSetupItem = function (index) {
@@ -30,7 +30,7 @@
 	    };
 	    list.count = 100;
 	    list.render();
-	  };
+	  });
 	</script>
 </head>
 </html>
