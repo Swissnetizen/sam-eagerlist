@@ -15,6 +15,7 @@
 
 <body style="background-color:#2c3e50;color: white;font-family: helvetica">
   <h1>&ltsam-eagerlist&gt Demo</h1>
+  <button>Press to populate list.</button>
   <sam-eagerlist id="list"></sam-eagerlist>
   <template id="template">
     <h1></h1>
@@ -29,8 +30,10 @@
 	      this.querySelector("h1").innerHTML = index + 1;
 	    };
 	    list.count = 100;
-	    list.render();
 	  });
+	  document.querySelector("button").addEventListener("onclick", function () {
+	    document.getElementById("list").render();
+	  })
 	</script>
 </head>
 </html>
