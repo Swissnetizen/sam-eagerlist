@@ -26,7 +26,7 @@
 	    var list = document.getElementById("list");
 	    var template = document.getElementById("template");
 	    list.setupItem = function (index) {
-	      this.appendChild(template.cloneNode(true));
+	      this.appendChild(template.content.cloneNode(true));
 	      xtag.query(this, "h1").innerHTML = index + 1;
 	    };
 	    list.count = 100;
