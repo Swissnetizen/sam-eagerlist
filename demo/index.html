@@ -12,19 +12,6 @@
 	<style>
 
 	</style>
-	<script>
-	  xtag.ready("sam-eagerlist", function () {
-	    var list = document.getElementById("list");
-	    var template = document.getElementById("template");
-	    list.onSetupItem = function (index) {
-	      this.appendChild(template.cloneNode(true));
-	      this.querySelector("h1").innerHTML = index + 1;
-	    };
-	    list.count = 100;
-	    list.render();
-	  });
-	</script>
-</head>
 
 <body style="background-color:#2c3e50;color: white;font-family: helvetica">
   <h1>&ltsam-eagerlist&gt Demo</h1>
@@ -33,5 +20,17 @@
     <h1></h1>
   </template>
 </body>
-
+	<script>
+	  window.onload = function ()
+	    var list = document.getElementById("list");
+	    var template = document.getElementById("template");
+	    list.onSetupItem = function (index) {
+	      this.appendChild(template.cloneNode(true));
+	      this.querySelector("h1").innerHTML = index + 1;
+	    };
+	    list.count = 100;
+	    list.render();
+	  };
+	</script>
+</head>
 </html>
