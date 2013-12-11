@@ -19,7 +19,7 @@
 	    list.onSetupItem = function (index) {
 	      this.appendChild(template.cloneNode(true));
 	      this.querySelector("h1").innerHTML = index + 1;
-	    });
+	    };
 	    list.count = 100;
 	    list.render();
 	  }) 	
