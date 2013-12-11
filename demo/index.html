@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Stub Demo - X-Tag</title>
-    <link rel="stylesheet" type="text/css" href="x-tag-components.css"/>
+  <meta charset="utf-8" />
+  <title>Stub Demo - X-Tag</title>
+  <link rel="stylesheet" type="text/css" href="x-tag-components.css"/>
 	<link rel="stylesheet" type="text/css" href="../src/main.css"/>
 
-    <script type="text/javascript" src="x-tag-components.js"></script> 
-    <script type="text/javascript" src="../src/main.js"></script>      
+  <script type="text/javascript" src="x-tag-components.js"></script> 
+  <script type="text/javascript" src="../src/main.js"></script>      
 	<style>
 
 	</style>
@@ -21,12 +21,13 @@
 	      this.querySelector("h1").innerHTML = index + 1;
 	    });
 	    list.count = 100;
-	    list.render
+	    list.render();
 	  }) 	
 	</script>
 </head>
 
-<body style="background-color:#2c3e50;color: white;">
+<body style="background-color:#2c3e50;color: white;font-family: helvetica">
+  <h1>&ltsam-eagerlist&gt Demo</h1>
   <sam-eagerlist id="list"></sam-eagerlist>
   <template id="template">
     <h1></h1>
