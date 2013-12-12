@@ -1,6 +1,6 @@
-# About
+# sam-eagerlist
 
-This repo is an X-Tag custom web-component stub that can be used as a starting point when building new elements.  It provides that basic tools and grunt tasks to get started.
+This sam-eagerlist is a component to simplyfy creating small lists.
 
 # Dev Setup
 
@@ -22,3 +22,23 @@ $ grunt build   // build the dependencies
 [Using X-Tag components in your applications](https://github.com/x-tag/core/wiki/Using-our-Web-Components-in-Your-Application)
 
 
+# Usage
+
+```
+var list = document.createElement("sam-eagerlist");
+document.body.appendChild(list);
+//How long the list is.
+list.count = 100;
+//Data to populate, not neccesary but ideal use-case.
+var dataArray = [
+  {title: "Mail", count:20},
+  [...]
+], data;
+list.setupItem = function (index) {
+  data = dataArray[index];
+  this.innerHTML = "<h1>"+data.title+"</h1><p>"+data.count+"</p>"
+};
+//Renders the list;
+list.render();
+
+```
