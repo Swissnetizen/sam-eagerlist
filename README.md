@@ -12,6 +12,7 @@ $ bower install	// install components
 $ grunt build   // build the dependencies
 
 ```
+# [Demo](http://samarthwiz.github.io/sam-eagerlist/demo/) 
 # Usage
 
 ```
