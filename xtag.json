@@ -1,6 +1,6 @@
 {
-	"name": "stub",
-	"tagName": "x-stub",
+	"name": "Sam-eagerlist",
+	"tagName": "sam-eagerlist",
 	"version": "0.1.0",
 	"author": "you",
 	"description": "",
@@ -15,7 +15,7 @@
 		"ios": 4
 	},
 	"documentation": {
-		"description": "",
+		"description": "An element which repeats elements",
 		"attributes": {},
 		"events": {},
 		"methods": {},
